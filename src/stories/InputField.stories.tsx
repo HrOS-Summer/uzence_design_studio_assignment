@@ -2,7 +2,7 @@ import { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { InputField } from '../components/inputField/InputField';
 
-const meta: Meta<typeof InputField> = {
+const meta: Meta = {
   title: 'Components/InputField',
   component: InputField,
   tags: ['autodocs'],
@@ -37,22 +37,33 @@ const meta: Meta<typeof InputField> = {
     showClear: true,
     disabled: false,
     type: "text",
+    errorMessage: "Please use only A-Z, a-z, 0-9 characters.",
   },
 };
 
 export default meta;
+type Story = StoryObj;
 
-type Story = StoryObj<typeof InputField>;
-
-// Custom render: stateful and always passes args
-const withState: Story["render"] = (args) => {
+// Fix - explicitly type args as 'any' to resolve TypeScript errors
+const withState: Story["render"] = (args: any) => {
   const [value, setValue] = useState(args.value ?? "");
-  // Always merge value and onChange with (controllable) args!
+  const [invalid, setInvalid] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = e.target.value;
+    setValue(newValue);
+    // Validation: only alphabets, numbers and space allowed
+    const isValid = /^[A-Za-z0-9 ]*$/.test(newValue);
+    setInvalid(!isValid && newValue.length > 0);
+  };
+
   return (
     <InputField
       {...args}
       value={value}
-      onChange={e => setValue(e.target.value)}
+      onChange={handleChange}
+      invalid={invalid || args.invalid}
+      errorMessage={invalid ? 'Please use only A-Z, a-z, 0-9 characters.' : args.errorMessage}
     />
   );
 };
@@ -84,5 +95,5 @@ export const Disabled: Story = {
     label: 'Disabled',
     placeholder: 'Not editable',
   },
-  render: (args) => <InputField {...args} />
+  render: (args: any) => <InputField {...args} />,
 };

@@ -65,7 +65,7 @@ export function DataTable<T extends { id: number }>({
 
   return (
     <div className="w-full overflow-x-auto bg-white dark:bg-gray-900 shadow rounded transition-colors duration-300">
-      {true ? (
+      {loading ? (
         <Loader />
       ) : data.length === 0 ? (
         <div className="p-6 text-center text-gray-500">No data available.</div>
