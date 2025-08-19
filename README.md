@@ -18,7 +18,7 @@ A modern design system assignment built with **React**, **TypeScript**, **Vite**
 ## 📦 Installation
 
 Clone the repository:
-`git clone https://github.com/HrOS-Summer/uzence_design_studio_assignment.git`
+`git clone https://github.com/HrOS-Summer/uzence_design_studio_assignment.git`  
 `cd uzence_design_studio_assignment`
 
 
@@ -45,10 +45,6 @@ Start Storybook for component documentation, testing, and isolated development:
 
 npm run storybook
 
-or
-yarn storybook
-
-text
 - Visit [http://localhost:6006](http://localhost:6006)
 
 ---
