@@ -50,7 +50,7 @@ npm run storybook
 ---
 ## 📁 Folder Structure
 
-![Folder Structure](./fiel_structure.png)
+![Folder Structure](./file_structure.png)
 
 ## 🧪 Running Tests
 
