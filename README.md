@@ -18,8 +18,8 @@ A modern design system assignment built with **React**, **TypeScript**, **Vite**
 ## 📦 Installation
 
 Clone the repository:
-git clone https://github.com/HrOS-Summer/uzence_design_studio_assignment.git
-cd uzence_design_studio_assignment
+`git clone https://github.com/HrOS-Summer/uzence_design_studio_assignment.git`  
+`cd uzence_design_studio_assignment`
 
 
 Install all dependencies:
@@ -45,10 +45,6 @@ Start Storybook for component documentation, testing, and isolated development:
 
 npm run storybook
 
-or
-yarn storybook
-
-text
 - Visit [http://localhost:6006](http://localhost:6006)
 
 ---
@@ -102,35 +98,6 @@ npm run test
 
 Run ESLint to check/fix code style and catch bugs early:
 npm run lint
-
----
-
-
-## 📚 Folder Structure
-
-src/
-components/
-dataTable/
-inputField/
-navbar/
-selectedCard/
-Loader/
-hooks/
-useCompanyData.ts
-data/
-data.ts
-types/
-types.ts
-App.tsx
-main.tsx
-.storybook/
-main.ts
-preview.ts
-public/
-README.md
-...
-
-text
 
 ---
 
