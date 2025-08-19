@@ -75,6 +75,24 @@ npm run lint
 
 ---
 
+## 📁 Folder Structure
+
+<img width="410" height="526" alt="file_structure" src="https://github.com/user-attachments/assets/1174fec0-38ec-4865-845c-ff868712b40c" />
+
+## 📷 Screenshots
+### Light Theme
+![lightTheme](https://github.com/user-attachments/assets/5b1ec95b-e953-4298-ad20-69dda6bb274e)
+
+### Dark Theme
+![screen_dark](https://github.com/user-attachments/assets/cbe038ef-235a-4a73-aaf2-169b03ced57c)
+
+### Table Loading State
+<img width="584" height="224" alt="loader" src="https://github.com/user-attachments/assets/9930779b-fbe1-4493-83fc-be1bd737145e" />
+
+### Input Error
+<img width="928" height="222" alt="input_error" src="https://github.com/user-attachments/assets/644fdef1-05e9-4811-a6c4-238577bf45a7" />
+
+
 ## 📝 Notes
 
 - Update the component stories (`*.stories.tsx`) as you add or change components.
