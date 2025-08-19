@@ -74,29 +74,28 @@ npm run lint
 
 ## 📚 Folder Structure
 
-src/
-components/
-dataTable/
-inputField/
-navbar/
-selectedCard/
-Loader/
-hooks/
-useCompanyData.ts
-data/
-data.ts
-types/
-types.ts
-App.tsx
-main.tsx
-.storybook/
-main.ts
-preview.ts
-public/
-README.md
-...
-
-text
+uzence_design_studio_assignment/
+├── .storybook/              # Storybook configuration files
+├── public/                  # Static assets served directly
+├── src/                     # Source code
+│   ├── assets/              # Images, fonts, icons, etc.
+│   ├── components/          # Reusable UI components
+│   │   ├── dataTable/          # Example component
+│   │   │   ├── DataTable.tsx
+│   │   │   └── DataTable.test.tsx
+│   │   │   
+│   ├── data/                # Static data / JSON / mock data
+│   ├── hooks/               # Custom React hooks
+│   ├── stories/             # Global Storybook stories
+│   ├── App.tsx              # Root component
+│   └── main.tsx             # Vite entry point
+├── storybook-static/        # Generated Storybook build (ignored in git)
+├── .gitignore
+├── index.html               # Vite HTML entry
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── vercel.json              # Vercel deployment config
 
 ---
 
