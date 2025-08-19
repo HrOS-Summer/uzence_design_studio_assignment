@@ -48,9 +48,6 @@ npm run storybook
 - Visit [http://localhost:6006](http://localhost:6006)
 
 ---
-## 📁 Folder Structure
-
-![Folder Structure](./fiel_structure.png)
 
 ## 🧪 Running Tests
 
