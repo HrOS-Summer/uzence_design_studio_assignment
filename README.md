@@ -18,12 +18,12 @@ A modern design system assignment built with **React**, **TypeScript**, **Vite**
 ## 📦 Installation
 
 Clone the repository:
-git clone https://github.com/HrOS-Summer/uzence_design_studio_assignment.git
-cd uzence_design_studio_assignment
+`git clone https://github.com/HrOS-Summer/uzence_design_studio_assignment.git`
+`cd uzence_design_studio_assignment`
 
 
 Install all dependencies:
-npm install
+`npm install`
 
 
 ---
