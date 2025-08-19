@@ -17,6 +17,7 @@ const data: MockData[] = [
   { "id": 5, "name": "Consumer Co 05", "sector": "Consumer Goods", "marketCap": 570, "employees": 7200 },
 
   { "id": 6, "name": "Tech Corp 06", "sector": "Technology", "marketCap": 1020, "employees": 8200 },
+  { "id": 7, "name": "Health Corp 07", "sector": "Healthcare", "marketCap": 680, "employees": 5000 },
 ];
 
 export default {

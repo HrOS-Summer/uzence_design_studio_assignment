@@ -1,69 +1,141 @@
-# React + TypeScript + Vite
+A modern design system assignment built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Storybook**. This project comes with fast HMR, ESLint rules, and a component-driven workflow.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite** for blazing-fast development environment
+- **React 19 + TypeScript**
+- **Tailwind CSS** (v4.1) for utility-first styling and dark mode
+- **Storybook** for isolated UI component development & documentation
+- **Testing** with Jest or Vitest + @storybook/testing-react
+- **ESLint** (with recommended and style checks)
+- **Component-driven structure** (Input, DataTable, Navbar, Card, etc.)
+- **Ready for scalable design system work**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Installation
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Clone the repository:
+git clone https://github.com/HrOS-Summer/uzence_design_studio_assignment.git
+cd uzence_design_studio_assignment
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Install all dependencies:
+npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🖥️ Running the Project
+
+Start the development server:
+npm run dev
+
+
+
+- App will be served at [http://localhost:5173](http://localhost:5173) (default Vite port)
+
+---
+
+## 🪄 Storybook (UI component explorer)
+
+Start Storybook for component documentation, testing, and isolated development:
+
+npm run storybook
+
+or
+yarn storybook
+
+text
+- Visit [http://localhost:6006](http://localhost:6006)
+
+---
+
+## 🧪 Running Tests
+
+If using Jest or Vitest (check your package.json scripts):
+
+npm run test
+
+
+- Includes support for **@storybook/testing-react** so you can test your components and stories.
+
+---
+
+## 💅 Linting
+
+Run ESLint to check/fix code style and catch bugs early:
+npm run lint
+
+---
+
+
+## 📚 Folder Structure
+
+src/
+components/
+dataTable/
+inputField/
+navbar/
+selectedCard/
+Loader/
+hooks/
+useCompanyData.ts
+data/
+data.ts
+types/
+types.ts
+App.tsx
+main.tsx
+.storybook/
+main.ts
+preview.ts
+public/
+README.md
+...
+
+text
+
+---
+
+## 🧑‍💻 Recommended VSCode Extensions
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+---
+
+## 📝 Notes
+
+- Update the component stories (`*.stories.tsx`) as you add or change components.
+- See Storybook’s [Docs](https://storybook.js.org/docs/writing-docs) and [Testing](https://storybook.js.org/docs/writing-tests) for more guidance.
+
+---
+
+## 🛠️ Troubleshooting
+
+- If Storybook is not picking up Tailwind styles, ensure `import '../src/index.css'` is present in `.storybook/preview.ts`.
+- For "Cannot find module '@storybook/testing-react'", run:  
+  `npm install --save-dev @storybook/testing-react`
+- For React version mismatches with Storybook, double check your `react` and `@storybook/*` versions.
+
+---
+
+## 📄 License
+
+[MIT](LICENSE) — Free to use and adapt.
+
+---
+
+## 👤 Maintainer
+
+- [Hariom Singh](https://github.com/HrOS-Summer)
+
+---
+
+
+
+
