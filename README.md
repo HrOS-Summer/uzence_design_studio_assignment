@@ -71,34 +71,6 @@ npm run lint
 
 ---
 
-
-## 📚 Folder Structure
-
-uzence_design_studio_assignment/
-├── .storybook/              # Storybook configuration files
-├── public/                  # Static assets served directly
-├── src/                     # Source code
-│   ├── assets/              # Images, fonts, icons, etc.
-│   ├── components/          # Reusable UI components
-│   │   ├── dataTable/          # Example component
-│   │   │   ├── DataTable.tsx
-│   │   │   └── DataTable.test.tsx
-│   │   │   
-│   ├── data/                # Static data / JSON / mock data
-│   ├── hooks/               # Custom React hooks
-│   ├── stories/             # Global Storybook stories
-│   ├── App.tsx              # Root component
-│   └── main.tsx             # Vite entry point
-├── storybook-static/        # Generated Storybook build (ignored in git)
-├── .gitignore
-├── index.html               # Vite HTML entry
-├── package.json
-├── tailwind.config.js
-├── tsconfig.json
-└── vercel.json              # Vercel deployment config
-
----
-
 ## 🧑‍💻 Recommended VSCode Extensions
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
