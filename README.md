@@ -50,7 +50,7 @@ npm run storybook
 ---
 ## 📁 Folder Structure
 
-![Folder Structure](./assets/fiel_structure.png)
+![Folder Structure](./src/assets/fiel_structure.png)
 
 ## 🧪 Running Tests
 
